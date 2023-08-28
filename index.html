@@ -12,7 +12,8 @@
   </head>
   <body>
     <header>
-    <!-- Here starts the navbar --> 
+
+<!-- Here starts the navbar --> 
     <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
       <a class="navbar-brand" href="#"><img src="./images/MomslogoNavbar.png" alt="Logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -42,7 +43,6 @@
         </ul>
       </div>
     </nav>
-    
     </header>
 
     <!-- Here starts the hero section --> 
@@ -50,17 +50,16 @@
         <img src="./images/mom and baby login.png" alt="Image" class="header-image">
       </div>
 <div class="colored-rectangle5"><h2 class="momheadertext">Let us help you</h2><img src="images/heart.png" alt="Image" class="heroheart"><img src="images/hero elements.png" alt="Image" class="elementsicons"></div>
-      
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-   <!-- Log In --> 
+  <!-- Log In --> 
   <div class="login-container">
     <h2>Login</h2>
     <form class="login-form">
@@ -118,36 +117,9 @@
   </ul>
 </div>
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const modal = document.getElementById("joinModal");
-        const q1Answers = document.getElementById("q1-answers").querySelectorAll(".answer-btn");
-      
-        let currentQuestion = 0;
-      
-        q1Answers.forEach((answer) => {
-          answer.addEventListener("click", function () {
-            currentQuestion++;
-            const nextQuestion = this.getAttribute("data-next-question");
-            const nextAnswers = document.getElementById(nextQuestion).querySelectorAll(".answer-btn");
-      
-            if (currentQuestion === 1) {
-              // Hide current question
-              q1Answers.forEach((btn) => btn.classList.add("hidden"));
-              // Show next question
-              nextAnswers.forEach((btn) => btn.classList.remove("hidden"));
-            }
-      
-            if (currentQuestion === 3) {
-              // Redirect to the provided URL after answering all questions
-              window.location.href = "https://michellepolo.github.io/moms4moms/";
-            }
-          });
-        });
-      });
-      </script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
   </body>
 </html>
